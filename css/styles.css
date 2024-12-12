@@ -1,0 +1,248 @@
+/* General Styles */
+* {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.efecto-sombra{
+    color:white;
+    text-shadow: 3px 3px 0px black, 5px 5px 0px purple;
+}
+
+.efecto-nav{
+    color:white;
+    text-shadow: 2px 2px 0px black, 3px 3px 0px purple;
+}
+
+h2 {
+    font-style: italic;
+}
+
+/* Header */
+header {
+    background-color: #5900aa;
+    font-style: oblique;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Main */
+main {
+    background-color: #8600ff;
+}
+
+/* Cards */
+.card, .carrito {
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.carrito {
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+.card:hover, .carrito:hover {
+    transform: translateY(-5px);
+}
+
+.card h2, .card h3 {
+    font-size: 1.2em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #282828;
+    line-height: 1.4;
+}
+
+.cards-section, .card-container, .section-iframe {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.cards-section .card img, .card-container .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.cards-section .card a, .card-container .card a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    transition: color 0.3s;
+}
+
+.cards-section .card a:hover, .card-container .card a:hover {
+    color: #0056b3;
+}
+
+/* Buttons */
+.mi-boton {
+    padding: 5px 10px;
+    background-color: #7b3ea6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.mi-boton:hover, .mi-boton:active {
+    background-color: #25116c;
+}
+
+#btnPagar {
+    background-color: #25116c;
+    color: white;
+    padding: 10px 20px;
+    font-size: larger;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+/* Reviews */
+.reseñas-section {
+    text-align: center;
+}
+
+.reseñas-section h2 {
+    font-size: 1.5em;
+    color: black;
+}
+
+/* Contact */
+.contacto-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+#detalle {
+    background-color: #f0f0f0;
+    border: 3px solid #000;
+    padding: 20px;
+    color: #333;
+    width: 35%;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: #2d0055;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    border-top: 2px solid #ddd;
+    font-size: 0.9em;
+    color: whitesmoke;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card-container, .cards-section, .section-iframe {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-section {
+        padding: 10px;
+    }
+
+    .contact-form {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 8px;
+    }
+
+    .contact-form button {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+}

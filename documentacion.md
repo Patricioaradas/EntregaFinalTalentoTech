@@ -1,0 +1,1 @@
+La pagina se tratara sobre un proyecto e-commerce de ensamble virtual de computadores a pedido y venta de componentes tecnologicos.

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen de Compra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+            <img src="./img/doc1s.jpeg" alt="Doctor Armador">
+<h1 class="efecto-sombra">PowerTech</h1>
+    <nav class="efecto-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="reseñas.html">Reseñas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+     
+        <hr>
+    </header>
+    <main>   
+        <h2>Gracias por su Compra</h2>
+        <section>
+            <div id="detalle"></div>
+        </section>
+
+   
+    
+    <form id="formulario" action="https://formspree.io/f/myzyajaj" method="POST">
+        <textarea id="carritoData" name="carrito" style="display:none;"></textarea>
+        <textarea id="totalCarrito" name="total" style="display:none;"></textarea>
+        <br>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required>
+        <input type="email" id="contactoEmail" name="email" placeholder="Ingresa tu correo" required>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required>
+        <br><br>
+        <button type="submit" id="botonEnviar">Confirmar Compra</button>
+    </form>
+    <br>
+    <a href="index.html"><button class="mi-boton" >Volver</button></a>
+     </main>
+     <script src="compra.js"> </script>
+    <footer>
+        <section class= "section-iframe">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.3217748779516!2d-71.06249331468653!3d42.356981296916985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e371c3d25d20a5%3A0x12e2de9e33c5c06!2sPowertech%20USA%2C%20Inc.!5e0!3m2!1ses-419!2sar!4v1730495637406!5m2!1ses-419!2sar" width="400" height="300" style="border:0;"
+             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NT-R6pcc3Fo?si=6Gp2PE65BqN_QJC7?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </section>
+        © 2024 [PowerTech]. Creando la PC de tus sueños desde cero. 
+        <br>
+        Síguenos en: Facebook Instagram Twitter 
+        <br>
+        Email: soporte@powertech.com | Tel: (123) 456-7890
+        <br>  
+        [términos y condiciones] | [política de privacidad]
+        
+    </footer>      
+</body>
+</html>
